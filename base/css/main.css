@@ -1,0 +1,749 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800,800italic,300italic";
+@font-face {
+	font-family: 'Conv_PT_Sans-Narrow-Web-Regular';
+	src: url('fonts/PT_Sans-Narrow-Web-Regular.eot');
+	src: local('☺'), url('fonts/PT_Sans-Narrow-Web-Regular.woff') format('woff'), url('fonts/PT_Sans-Narrow-Web-Regular.ttf') format('truetype'), url('fonts/PT_Sans-Narrow-Web-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_PT_Sans-Narrow-Web-Bold';
+	src: url('fonts/PT_Sans-Narrow-Web-Bold.eot');
+	src: local('☺'), url('fonts/PT_Sans-Narrow-Web-Bold.woff') format('woff'), url('fonts/PT_Sans-Narrow-Web-Bold.ttf') format('truetype'), url('fonts/PT_Sans-Narrow-Web-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; outline: 0;}
+ul {list-style: none;}
+html {height: 100%;}
+body {
+	font-family:"Open Sans",Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-style:normal;
+	font-weight:300;
+	color:#302e2e
+}
+a{
+	color:#df5f9b; text-decoration:none; cursor:pointer
+}
+a:hover{
+	text-decoration:underline
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+#panelcont {
+    overflow-x: hidden;
+    position: relative;top: 0;
+    width: 100%;
+}
+.link-panel {
+    background: url("../img/ico-panel.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: transparent;
+    cursor: pointer;
+    float: left;
+    font-size: 0;
+    height: 42px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9000em;
+    width: 42px;
+    z-index: 3;
+	display:none
+}
+#header{
+	background:#302e2e;height:112px
+}
+#header > .tophead{
+	width:1144px;
+	margin:0px auto;
+	position:relative
+}
+#header .logo {
+    float: left;
+    width: 220px;height: 50px;
+    position: relative;
+	top:45px;left:20px
+}
+#header a,#panelleft a{color:#fff}
+#header a:hover,#panelleft a:hover{text-decoration:none;color:#e1aabf}
+#header li.active a,#panelleft li.active a,#panelleft .nav li.active a{color:#e1aabf}
+.leftcontent li.active a{color:#df5f9b}
+#header a.logo img {
+    top: 0;left: 0;
+    position: absolute;
+    transition: all 0.2s ease-in 0s;
+}
+#header a.logo img.hoverlogo {
+    opacity: 0;
+}
+#header a.logo:hover img:first-child {
+    opacity: 0;
+}
+#header a.logo:hover img.hoverlogo {
+    opacity: 1;
+}
+#header .right{
+	float:right
+}
+#header .right .topbar{
+	position:absolute; top:0px; right:0px
+}
+#header .topbar li{float:left; margin:28px 10px 40px}
+#header .right li.icon a,li.icon a{
+	background:url(../img/ico-socail.png) no-repeat;
+	display:block;
+	width:24px; height:25px
+}
+#header .right li.icon{
+	margin:24px 5px
+}
+li.p a,#header .right li.p a{
+	background-position:-65px 0px
+}
+li.twitter a, #header .right li.twitter a{
+	background-position:-33px 0px
+}
+li.icon a:hover,#header li.icon a:hover{
+	background:url(../img/ico-socail.png) no-repeat 0px -35px;
+}
+li.twitter a:hover,#header li.twitter a:hover{
+	background-position:-33px -35px
+}
+li.p a:hover,#header li.p a:hover{
+	background-position:-65px -35px
+}
+#header .right .topbar ul {
+	float:right
+}
+#header .right #menu-hoofdmenu-1 li{float:left; margin:0px 17px}
+#header .right li.p{ margin-right:15px}
+#header .right .nav{
+	position:relative;
+	top:80px;right:0px
+}
+.tophead .nav > ul > li > a{
+	font-size:15px;
+	text-transform:uppercase
+}
+#panelwrapper{background:url(../img/bg-mid.png) no-repeat top center #c4d0d2;}
+#mid{
+	max-width:1144px; width:100%;
+	margin:50px auto 60px auto;
+	display:table;
+}
+.Uitvaart {
+    background:#fff;
+    max-width: 207px;
+	padding:30px 28px; 
+	width:100%
+}
+.Uitvaart p{ 
+	line-height:29px; font-size:14px; letter-spacing:0.5px
+}
+.Uitvaart h1{
+	font-size:33px; color:#302e2e;
+	display:block;
+	line-height:26px;
+	text-transform:uppercase;
+	font-weight:normal;
+	margin-bottom:15px
+}
+
+.Uitvaart p span.bottom{
+	color:#df5f9b; display:block
+}
+.Uitvaart p span.bottom a{color:#df5f9b}
+#mid > .left{
+	float:left; max-width:267px; margin:70px 7px 40px 0px; width:23%
+}
+#mid > .center .left{ max-width:297px; margin-right:6px; float:left;width:58%}
+.contact-number{
+	max-width:267px;
+	background:#383837;
+	margin-top:7px;
+	width:100%; text-align:center
+}
+.contact-number p{
+	padding:50px 35px
+}
+.contact-number span:first-child{
+	font-size:21px;
+	background:url(../img/ico-phone.png) no-repeat left;
+	display:block;
+	color:#fff;
+	padding-left:30px;
+	line-height:24px;
+	letter-spacing:0.5px
+}
+.contact-number span:first-child + span{
+	font-size:15px; color:#e1aabf; line-height:29px; letter-spacing:0.2px
+}
+#mid .left > .slim{
+	text-align:right; margin-top:7px
+}
+#mid .center{
+	float:left;
+	max-width:870px; position:relative; width:77%
+}
+#mid .center > .left{
+	width: 258px; float:left; margin-right:6px
+}
+#mid .center .stamp-logo{ position: absolute; top:190px; left:235px}
+
+.nav-list-example li {
+    float: left;
+    margin-right: 24px;
+    position: relative;
+}
+.saskia .nav-list-example li,.saskia .nav-list-example li div{width: 227px;height: 271px;}
+.candle{margin-top:7px; float:left; position:absolute; top:295px}
+.laag4{ margin-top:7px; position:absolute; top:282px; right:0px}
+.esther .nav-list-example li,.esther .nav-list-example li div{width: 180px;height: 190px;}
+.nav-list-example li div {
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    top: 0; left: 0;
+}
+.nav-list-example li div.back {
+    left: -999em; text-align:center;display: table;
+}
+.nav-list-example li div.back p{display: table-cell;vertical-align: middle;}
+.laag2{ float:left; max-width:197px; position:absolute; right:6px; width:42%}
+.laag-right{float:left; max-width:335px; position:absolute; right:0px; width:40%}
+.slim-pattern{ position:absolute; top:611px}
+.saskia{ position:absolute; top:546px; left:303px}
+.nav-list-example li div.back a{
+	color:#e3e9eb; 
+	font-size:21px;
+	text-transform:uppercase;
+	font-family:'Conv_PT_Sans-Narrow-Web-Regular',Sans-Serif;
+	letter-spacing:2.6px;
+	display:block
+}
+.saskia .nav-list-example li div.back a{padding:100px 0px}
+.esther .nav-list-example li div.back a{padding:58px 0px}
+.stamp{
+	position:absolute; 
+	left:0px; top:0px; 
+	float:left; 
+	max-width:506px;
+	width:60%
+}
+.laag3{float:left; position:absolute}
+.nav-list-example li div a:hover{ text-decoration:none}
+.nav-list-example li div.back{ background:#302e2e}
+.slim2{position:absolute; top:500px; left:535px}
+.esther { 
+	position:absolute; 
+	top:500px; left:657px
+}
+.center .button{
+	position:absolute; 
+	top:697px; left:535px
+}
+.center .button div{ width:302px; height:67px; background:#ec6290}
+.center .button p{ text-align:center;}
+.center .button p a{
+	color:#fff; font-size:21px; 
+	line-height:67px; letter-spacing:1px;
+	display:block
+}
+.center .button p a:hover{text-decoration:none}
+.center .button div:hover{ background:#dc5b86}
+.fadeInOut {opacity:0; transition:opacity 0.2s linear;}
+div.hover:hover  .fadeInOut {opacity:1}
+.laag3 .fadeInOut{width:297px; height:295px}
+.fadeInOut a span{
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:center; 
+	border:1px #626160 solid
+}
+.fadeInOut{ 
+	display:table; 
+	text-align:center; 
+	position:absolute; 
+	left:0px; top:0px
+}
+.candle .fadeInOut a{width:277px; height:283px}
+.laag2 .fadeInOut a{width:206px; height:520px}
+.laag12 .fadeInOut a{width:313px; height:263px}
+.slim-pattern .fadeInOut a{width:277px; height:188px}
+.laag4 .fadeInOut a{width:313px; height:185px}
+.slim2 .fadeInOut a{width:96px;; height:172px}
+.fadeInOut p a{ 
+	font-size:16px; color:#302e2e;
+	font-family:'Conv_PT_Sans-Narrow-Web-Regular',Sans-Serif;
+	line-height:25px; letter-spacing:4px;
+	text-transform:uppercase;
+	display:table;
+	width:100%;
+	background:#fff;
+	opacity:0.8
+}
+.fadeInOut p a:hover{text-decoration:none;}
+.laag12{position:absolute; top:0px; right:0px}
+.laag2 .fadeInOut a span{ vertical-align:bottom; padding-bottom:20px}
+.fadeInOut p a{ height:275px; padding:10px; width:277px}
+#panelleft{
+	position:absolute;
+	width:270px; height:100%;
+	top:0px; bottom:0px;
+	background:#3f3d3d;
+	z-index:100;
+	display:none;
+	left:-270px;
+}
+#panelleft .nav li{border-bottom:1px #606060 solid}
+#panelleft .nav li.active{background:#ec6391}
+#panelleft .nav li.active a{color:#fff}
+#panelleft .nav li a{ 
+	color:#fff;
+	font-family:"Open Sans",Arial,Helvetica,sans-serif;
+	font-size:15px;
+	text-transform:uppercase;
+	display:block;
+	line-height:43px;
+	padding:0px 15px
+}
+#panelleft a{font-weight:normal}
+#panelleft .nav li:hover{ background:#302e2e}
+#panelleft .social li{float:left; margin-right:9px}
+#panelleft .social{ margin:30px 15px; float:left; width:100%}
+#panelleft .topbar{float:left; width:100%; margin-left:15px}
+#panelleft .topbar li{margin-bottom:20px}
+#footer{
+	background:#3f3d3d;
+}
+.content-footer{max-width:1085px; margin:0px auto; width:100%}
+.menu li{
+	float:left; 
+	text-transform:uppercase; 
+	width:270px; margin-top:40px; 
+	line-height:20px; 
+	color:#fff
+}
+.menu li a{color:#fff; width:100%; display:block}
+.menu li a:hover{text-decoration:none; color:#e1aabf}
+.menu li p{ color:#fff; font-weight:bold}
+.menu,#footer .line{width:100%; float:left}
+#footer .line{ background:#606060; height:1px; margin:25px 0px}
+.copyright{ color:#fff; padding-bottom:25px; font-size:11px; letter-spacing:1px; text-transform:uppercase}
+/*contact page*/
+.leftcontent{
+	float:left;
+	max-width:267px;
+	margin:70px 7px 0px 0px;
+	width:23%
+}
+.content-nav{background:#fff; }
+.leftcontent li a{
+	color:#302e2e;
+	text-transform:uppercase;
+	letter-spacing:1px
+}
+.leftcontent ul li{ padding:5px 0px}
+.leftcontent ul{ padding:15px 0px 15px 30px}
+.midcontent #contact ul{list-style-image:none}
+.leftcontent li a:hover{text-decoration:none; color:#df5f9b}
+.midcontent{float:left; max-width:530px; width:48%; background:url(../img/bg-midcontent.png) repeat-y; padding-bottom:40px}
+.col-2 .midcontent{max-width:870px; background-image:url(../img/bg-midcontent-870.png); float:left; width:77%}
+.midcontent > .content{padding:30px 30px 0px 30px; float:left}
+#contact{ margin:15px 0px 0px}
+input[type="text"],textarea{
+	background:#fff;
+	width:382px;
+	border:1px #d9d9d9 solid; border-bottom:0px; border-right:0px;
+	color:#8f9696; font-size:14px;
+	padding-left:8px;
+	outline:0px
+}
+input[type="text"]{height:35px; margin-top:10px;}
+#contact p span{
+	width:86px;height:24px;
+	line-height:24px;
+	text-align:center; color:#fff;
+	background:#eb3c00;
+	display:block; float:right;
+	font-size:11px; font-family:Verdana, Geneva, sans-serif; font-weight:normal; letter-spacing:0px 
+}
+#contact p{width:390px}
+#contact .main{ float:left; margin-top:10px}
+#contact .code{ margin:10px 0px 0px}
+
+.selectBox-dropdown {
+    background:#eee;
+    border-bottom: 1px solid #e0e2da;
+    border-radius: 5px;
+    border-right: 1px solid #e8eae5;
+    color: #676767;
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    min-width: 212px;
+    outline: medium none;
+    padding-left: 15px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+	width:377px!important;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:10px 0px
+}
+.selectBox-dropdown .selectBox-label {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.selectBox-dropdown .selectBox-arrow {
+    background: url("../img/selectbox-arrow.png") no-repeat scroll right 0 rgba(0, 0, 0, 0);
+    height: 36px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 22px;
+}
+.selectBox-dropdown-menu {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    max-height: 200px;
+    min-height: 1em;
+    overflow: auto;
+    position: absolute !important;
+    z-index: 99999;
+}
+.selectBox-inline {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 4px;
+    display: inline-block;
+    min-width: 150px;
+    outline: medium none;
+    overflow: auto;
+}
+.selectBox-inline:focus {
+    border-color: #f7f9f9;
+}
+.selectBox-options, .selectBox-options li, .selectBox-options li a {
+    cursor: default;
+    display: block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.selectBox-options li {
+    border-top: 1px solid #fff;
+}
+.selectBox-options li a {
+    background: none repeat scroll 0 0 #f7f7f6;
+    color: #262626;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    padding: 0 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.selectBox-options li.selectBox-hover a {
+    background-color: #f0f0ed;
+}
+.selectBox-options li.selectBox-disabled a {
+    background-color: transparent;
+    color: #888;
+}
+.selectBox-options li.selectBox-selected a {
+    color: #262626;
+    text-decoration: none;
+}
+.selectBox-options .selectBox-optgroup {
+    background: none repeat scroll 0 0 #eee;
+    color: #666;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 0.3em;
+    white-space: nowrap;
+}
+.selectBox.selectBox-disabled {
+    color: #888 !important;
+}
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+    border-color: #666;
+    opacity: 0.5;
+}
+.selectBox-inline.selectBox-disabled {
+    color: #888 !important;
+}
+.selectBox-inline.selectBox-disabled .selectBox-options a {
+    background-color: transparent !important;
+}
+.ginput_container a:hover{text-decoration:none}
+.submit{text-align:right; margin-top:20px}
+.rightcontent{ float:right; max-width:333px; margin-top:35px; width:29%}
+.rightcontent .contact-number{ max-width:333px; width:100%; height:107px; margin-bottom:7px}
+.rightcontent .contact-number p{padding:30px 55px}
+.description{font-weight:normal; margin:20px 0px}
+#pagecontent .midcontent{font-size:14px}
+#pagecontent .imageleft img{float:left; margin:10px 30px 0px 0px}
+.imageleft{margin:10px 0px; float:left}
+.imageright img{float:right; margin:10px 0px 0px 30px}
+.imageright{margin:5px 0px 0px 0px; float:left}
+.bottommobile .leftcontent{display:none}
+.midcontent #contact ul{margin:0px}
+#pagecontent li{margin:5px 0px}
+.imageleft, .imageleft img{vertical-align:top}
+@media screen and (max-width: 980px) 
+{
+	#mid{width:98%; max-width:98%}
+	#mid > .left{width:22%}
+	#header > .tophead,.content-footer{width:95%}
+	.tophead a{font-size:11px}
+	.tophead .nav > ul > li > a{font-size:13px}
+	.Uitvaart{
+		padding:10%;
+		width:80%
+	}
+	.Uitvaart h1{font-size:28px}
+	.Uitvaart p{
+		padding:10px 0px; 
+		font-size:12px; 
+		line-height:25px
+	}
+	#mid > .left{margin:70px 7px 0 0}
+	#mid .left > .contact-number p{
+		padding:42px 20px
+	}
+	#mid .left > .contact-number span:first-child{
+		font-size:18px;
+		background:url(../img/ico-phone.png) no-repeat left;
+		display:block;
+		color:#fff;
+		padding-left:30px;
+	}
+	#mid .left > .contact-number span:first-child + span{
+		font-size:13px; color:#e1aabf; line-height:25px; letter-spacing:0.2px
+	}
+	#mid .left > .slim{
+		text-align:right; margin-top:7px
+	}
+	.slim img{width:181px; height:181px;}
+	.laag3 .fadeInOut a{width:238px; height:237px}
+	.laag3 img{ width:258px; height:257px}
+	.laag3 a{height:257px}
+	.candle .fadeInOut a{width:238px; height:244px}
+	.candle img{width:258px; height:264px;}
+	.candle{top:256px}
+	.laag2 .fadeInOut a{width:177px; height:451px}
+	.laag2 img{width:197px; height:471px}
+	.laag2,.laag-right{width:39%}
+	#mid .center .stamp-logo{left:205px; top:165px}
+	#mid .center .stamp-logo img{width:119px; height:119px}
+	.laag12 .fadeInOut a{width:251px; height:226px}
+	.laag12 img{width:271px; height:246px}
+	.laag4{top:245px}
+	.laag4 .fadeInOut a{width:251px; height:159px}
+	.laag4 img{width:271px; height:179px}
+	.fadeInOut p a{ font-size:14px;}
+	.slim-pattern .fadeInOut a{width:238px; height:161px}
+	.slim-pattern img{width:258px; height:181px}
+	.slim-pattern{top:533px}
+	.saskia {left: 263px;top: 476px;}
+	.saskia .nav-list-example li,.saskia .nav-list-example li div{width: 198px;height: 236px;}
+	.nav-list-example li div a{font-size:18px; }
+	.saskia .nav-list-example li,.saskia .nav-list-example li div{width: 198px;height: 236px;}
+	.slim2 {left: 469px;top: 437px;}
+	.esther {    left: 589px;    top: 437px;}
+	.slim2 .fadeInOut a{width:81px; height:146px}
+	.slim2 img{width:101px; height:166px}
+	.esther .nav-list-example li,.esther .nav-list-example li div{width: 157px;height: 166px;}
+	.esther{left:576px}
+	.esther .front img{width:157px; height:166px;}
+	#panelwrapper { left: 0; width: 100%; float: right;position: relative;}
+	.center .button {    left: 469px;    top: 610px;}
+	.center .button div{ width:264px; height:58px;}
+	.center .button p a{color:#fff; font-size:18px; line-height:58px;}
+	.menu li{width:230px}
+	.pagefull .leftcontent,.pagefull .contact-number{width:257px;}
+	.rightcontent .contact-number p{padding:30px 15px}
+	.rightcontent {width: 27%}
+	.rightcontent .image img{ width:200px; height:200px}
+	.pagefull .midcontent{width:705px}
+	.saskia .nav-list-example li div.back a{padding:83px 0px}
+	.esther .nav-list-example li div.back a { padding: 48px 0;}
+}
+@media screen and (max-width: 800px) 
+{
+	#mid > .left{width:25.7%}
+	.Uitvaart {
+		padding: 10% 6%;
+		width: 88%;
+	}
+	#header > .tophead,.content-footer{width:760px}
+	#header .logo{left:0px}
+	#header .right #menu-hoofdmenu-1 li{ margin:0px 8px}
+	.menu li{width:190px}
+	#header .right li.p{margin-right:5px}
+	.laag3 img{width:182px; height:181px}
+	.laag3 .fadeInOut a{width:162px; height:161px}
+	.candle img{width:181px; height:185px;}
+	.candle .fadeInOut a{width:161px; height:165px;}
+	.candle{top:182px}
+	.laag2{left:188px}
+	.laag2 img{width:157px; height:375px}
+	.laag2 .fadeInOut a{width:137px; height:355px}
+	#mid .center .stamp-logo{left:125px; top:88px}
+	.laag12 img{width:194px; height:165px}
+	.laag12 .fadeInOut a{width:174px; height:145px}
+	.laag4 img{width:194px; height:120px}
+	.laag4 .fadeInOut a{width:174px; height:100px}
+	#mid .center{width:73.2%}
+	.laag4{top:165px; right:4px}
+	.slim-pattern img{width:182px; height:125px}
+	.slim-pattern .fadeInOut a{width:162px; height:105px}
+	.slim-pattern,.saskia{top:382px;}
+	.saskia{left:188px}
+	.saskia .nav-list-example li, .saskia .nav-list-example li div,.saskia .front img{width:157px; height:125px;}
+	.slim2 img{width:76px; height:125px}
+	.slim2 .fadeInOut a{width:56px; height:105px}
+	.slim2{top:299px; left:353px}
+	.esther{top:299px; left:435px}
+	.esther .nav-list-example li, .esther .nav-list-example li div,.esther .front img{width:112px; height:125px;}
+	.center .button{top:430px; left:353px}
+	.center .button div{width:194px}
+	.Uitvaart p{line-height:20px}
+	#mid .left > .contact-number p{padding:23px 14px}
+	.slim img{width:120px; height:120px}
+	.Uitvaart p span:first-child + span{margin-top:2px}
+	#mid > .left{margin:30px 7px 0px 0px}
+	.leftcontent{display:none}
+	.rightcontent .leftcontent{ display:block!important; float:none; margin:0px; width:100%; max-width:100%}
+	.laag12{right:4px}
+	.saskia .nav-list-example li div.back a { padding: 25px 0;}
+	.esther .nav-list-example li div.back a {padding: 16px 0;}
+	.nav-list-example li div a{letter-spacing:0.5px}
+	.midcontent{width:68%}
+	.rightcontent {
+    	width: 31%;
+	}
+	
+}
+@media screen and (max-width: 640px) 
+{
+	#panelleft { display : block;}
+	.link-panel{display:block}
+	#header .right{display:none}
+	#mid{margin:40px auto; height:1305px}
+	.menu li{width:150px; height:100px;}
+	#mid > .left{ margin:0px auto}
+	#mid .left > .contact-number{width:212px;float:left}
+	#mid .left > .contact-number p{padding:37px 25px}
+	#mid .left > .slim{float:left; width:125px; margin-left:7px;}
+	.slim img{width:125px; height:125px;}
+	.saskia{left:0px; top:6px}
+	.saskia .nav-list-example li, .saskia .nav-list-example li div,.saskia .front img{width:158px; height:188px;}
+	.esther{top:6px; left:165px}
+	.esther .nav-list-example li, .esther .nav-list-example li div,.esther .front img{width:180px; height:188px;}
+	.center .button{left:0px;top:200px}
+	.center .button div{width:345px; height:65px}
+	.center .button p a{line-height:67px; font-size:21px; letter-spacing:2px;}
+	.stamp{top:271px;}
+	.candle{top:182px}
+	.laag2{left:188px}
+	.stamp-logo img{width:108px; height:108px}
+	#mid .center .stamp-logo{left:130px; top:130px}
+	.laag-right{left:0px;top:652px}
+	.laag12 img{width:142px; height:120px}
+	.laag12 .fadeInOut a{width:122px; height:100px}
+	.laag4{top:0px; left:148px; margin-top:0px}
+	.slim-pattern{ left:0px; top:778px;}
+	.slim2{left:188px;top:778px}
+	.Uitvaart p{line-height:25px}
+	#header .logo{left:20px}
+	.rightcontent{float:left; margin-top:7px; width:100%; max-width:100%}
+	.image{display:none}
+	.rightcontent .contact-number p{padding:30px 60px}
+	.pagefull .leftcontent.leftmenu{display:none}
+	.pagefull .bottommobile .leftcontent{display:block; margin-top:7px}
+	input[type="text"], textarea{width:270px}
+	#contact p{width:280px}
+	.wrapper-dropdown-5{width:250px}
+	#mid .left > .contact-number span:first-child{font-size:17px}
+	.selectBox-dropdown{width:265px!important}
+	.midcontent > .content{padding:30px 30px 0px}
+	.leftcontent ul{padding:12px 25px}
+	#panelwrapper{background-position:-150px 0px}
+	.rightcontent .contact-number,.content-footer{width:320px}
+	.center-block{width:260px; margin:0px auto}
+	#header > .tophead{width:360px}
+	.menu li{height:85px}
+	.laag12{right:0px; left:0px}
+	#crumbs{display:none}
+	.midcontent h1{margin-top:0px}
+	.saskia .nav-list-example li div a,.esther .nav-list-example li div a{padding:60px 0px}
+	#mid > .left{max-width:100%; width:100%}
+	.Uitvaart{max-width:100%}
+	.Uitvaart h1{line-height:22px}
+	.midcontent {
+    	width: 100%; max-width:100%
+	}
+	#mid .center{height:900px}
+}
+@media screen and (max-width: 320px) 
+{
+	#mid{max-width:96%; width:96%}
+	#footer{padding-left:5px}
+	#mid .left > .contact-number p{padding:37px 8px}
+	#mid .left > .contact-number{width:57%}
+	.laag4 img, .laag4 .fadeInOut{width:160px}
+	.laag4 .fadeInOut a{width:140px}
+	.laag2 img{width:132px}
+	.laag2 .fadeInOut p a{font-size:11px; line-height:17px; width:112px}
+	.center-block{width:300px}
+	.midcontent > .content{padding:15px 15px 0px}
+	.saskia .nav-list-example li, .saskia .nav-list-example li div, .saskia .front img {
+		height: 179px;
+		width: 150px;
+	}
+	.esther {
+		left: 157px;
+		top: 7px;
+	}
+	.esther .nav-list-example li, .esther .nav-list-example li div, .esther .front img {
+		height: 177px;
+		width: 152px;
+	}
+	.center .button{top:191px}
+	.stamp {
+		top: 263px;
+	}
+	.center .button div{width:309px}
+	.laag-right{top:644px}
+	.slim-pattern,.slim2{top:770px}
+	.laag2 img,.laag2 .fadeInOut{width:120px}
+	.laag2 .fadeInOut p a{width:100px; padding:10px 6px}
+}

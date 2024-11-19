@@ -1,0 +1,107 @@
+.theme-org {
+	.widget-box {
+		h3.title {
+			background: #fdf0e5;
+			color: #ff9e40;	
+			a {
+				color: #ff9e40;	
+			}
+		}
+	}
+	.widget-link h3.title, .widget-content-text h3.title, .widget-content-text h1.title {
+		background: #ff9e40;
+		color: #fff;
+	}
+	.top-bar-section ul li.active > a, .top-bar-section ul li > a:hover {
+		background: $org;
+		color: #fff;
+		.fa-home {
+			color: #f6b480;
+		}
+	}
+	 
+	#middle .top-oval {
+	    background-image: url(../images/oval-top-org.png);
+	}
+	#middle .top-oval > .columns {
+		background-image: url(../images/oval-footer-org.png);
+	}
+	
+	.breadcrumbs > .current {
+		color: #ff9e40;
+	}
+	
+	.widget-subnav {
+		h3.title {
+			background: $org;
+			color: #fff;
+		}
+	}
+	.toggle-wrap {
+		> li { 
+			> h4 { 
+				background: #ffebd4;
+				border-bottom: 1px solid #eddecd;
+			    a {
+				    color: #00446c;
+				}
+				&:hover {
+					background: #ff9e40;
+					border-bottom-color:#ff9e40;
+					a, i {
+						color: #fff;
+					}
+				}
+				a:hover {
+					color: #fff;
+				}
+				&.active {
+					background: #ff9e40;
+					border-bottom-color:#ff9e40;
+					color: #fff;
+					a {
+						color: #fff;
+					}
+				}
+			} 
+		}
+		.body-toggle ul li {
+			a:hover {
+				color: $org;
+			}
+			&.active a {
+				border-left-color: $org;
+				color: $org;
+			}
+		}
+	}
+	.list-view li .meta .date .cat {
+		color: $org;
+	}
+	.top-bar .toggle-topbar.menu-icon a {
+		background: #ED6900;
+		border-color: #ED6900;
+		color: #fff;
+		&:after {
+			@include box-shadow(0 11px 0 2px #fff, 0 18px 0 2px #fff, 0 25px 0 2px #fff);
+		}
+	}
+	
+	ul.pagination {
+		li a {
+		    background: #ffebd4;
+		    color: $org; 
+		}
+		li.current a, li a:hover {
+			background: $org;
+			color: #fff;
+		}
+		li.arrow a {
+			background: none;
+			&:hover {
+				color: $donker;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,705 @@
+.inset-nav {
+	list-style: none;
+	margin-top: 13px;
+	li {
+		float: left;
+		margin-right: 24px;
+		@include breakpoint(995px) { 
+			margin-right: 20px;
+		}
+		 
+		a {
+			color: $donker;
+			font-size: 14px;
+			font-family: $font_b;
+			display: block;
+			&:hover {
+				color: $pink;
+			}
+		}
+		&.style {
+			position: relative;
+			padding-left: 10px;
+			&:before {
+				content: "";
+				height: 13px;
+				position: absolute;
+				left: -7px;
+				top: 6px;
+				border-left: #626160 2px solid;
+			}
+			
+			a {
+				color: $pink;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+		
+	}
+}
+.contain-to-grid {
+    background: none repeat scroll 0 0 #333333;
+    width: 100%;
+    .top-bar {
+	    margin-bottom: 0;
+	}
+
+}
+.fixed {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    &.expanded:not(.top-bar) {
+	    height: auto;
+	    max-height: 100%;
+	    overflow-y: auto;
+	    width: 100%;
+	    .title-area {
+		    position: fixed;
+		    width: 100%;
+		    z-index: 99;
+		}
+		.top-bar-section {
+		    margin-top: 45px;
+		    z-index: 98;
+		}
+	}
+}
+ 
+ 
+ 
+.top-bar {
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    
+    ul {
+	    list-style: none outside none;
+	    margin-bottom: 0;
+	}
+	.row {
+	    max-width: none;
+	}
+	
+	.title-area {
+	    margin: 0;
+	    position: relative;
+	}
+	.name {
+	    font-size: 16px;
+	    height: 45px;
+	    margin: 0;
+	    display: block;
+	    color: $green;
+	    font: normal 18px $font_b;
+	    padding: 20px 0 0 20px;
+	}
+	.name h1 {
+	    font-size: 1.0625rem;
+	    line-height: 45px;
+	    margin: 0;
+	}
+	.name h1 a {
+	    color: white;
+	    display: block;
+	    font-weight: normal;
+	    padding: 0 15px;
+	    width: 75%;
+	}
+	.toggle-topbar {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    a {
+		    color: white;
+		    display: block;
+		    height: 45px;
+		    line-height: 45px;
+		    padding: 0 15px;
+		    position: relative;
+		    text-transform: uppercase;
+		}
+		
+		&.menu-icon {
+		    margin-top: -11px;
+		    right: 15px;
+		    top: 51%;
+		    a {
+			    color: #bcbab5;
+			    height: 36px;
+			    width: 107px;
+			    line-height: 36px;
+			    padding: 0 0 0 9px;
+			    position: relative; 
+			    display: block;
+			    font-size: 18px;
+			    font-family: $font_a;
+			    text-transform: uppercase;
+			    font-weight: bold;
+			    &:after {
+				    @include box-shadow (0 11px 0 2px #bcbab5, 0 18px 0 2px #bcbab5, 0 25px 0 2px #bcbab5);
+				    content: "";
+				    display: block;
+				    height: 0;
+				    position: absolute;
+				    right: 9px;
+				    top: 0;
+				    width: 24px;
+				}
+				 
+			}
+		}
+	}
+	&.expanded {
+	    background: none repeat scroll 0 0 transparent;
+	    height: auto;
+	    z-index: 99999;
+	    .title-area {
+		    /* background: none repeat scroll 0 0 #333333; */
+		}
+		.toggle-topbar a {
+		    /* color: #888888; */
+		}
+		.toggle-topbar a:after { 
+		    @include box-shadow (0 11px 0 2px #bcbab5, 0 18px 0 2px #bcbab5, 0 25px 0 2px #bcbab5);
+		}
+	}
+} //end .top-bar
+ 
+
+
+
+
+.top-bar-section {
+    left: 0;
+    position: relative;
+    transition: left 300ms ease-out 0s;
+    width: auto;
+    padding-top: 13px;
+     
+    ul {
+	     
+	    display: block;
+	    font-size: 16px;
+	    height: auto;
+	    margin: 0;
+	    width: 100%;
+	    clear: both;
+	    li {
+	    	border-top: #e4e2e0 1px solid;
+	    	position: relative;
+		   > a {
+			    display: block;
+			    font: normal rem-calc(18) $font_b;
+			    padding: 14px 19px 12px;
+			    color: $donker;  
+			} 
+			&.active > a {
+			    color: $green;
+			    &:hover { 
+				    color: $green;
+				}
+			}
+	    } 
+	    
+	     
+	}
+	.divider, [role="separator"] {
+	    border-top: 1px solid #1a1a1a;
+	    clear: both;
+	    height: 1px;
+	    width: 100%;
+	}
+	.has-dropdown > a {
+		padding-right: 35px;
+	}
+	.has-dropdown > a:after { 
+	    display: block;
+	    height: 0;
+	    margin-right: 25px;
+	    margin-top: -11px;
+	    position: absolute;
+	    right: 0;
+	    top: 50%;
+	    width: 0;
+	    font-size: 18px;
+	    content: "\f101";
+	    -moz-osx-font-smoothing: grayscale;
+	    display: inline-block;
+	    font-family: 'FontAwesome';
+	    font-style: normal;
+	    font-weight: normal;
+	    line-height: 1;
+	  
+	}
+	.has-dropdown.moved {
+	    position: static;
+	}
+	.has-dropdown.moved > .dropdown {
+	    clip: auto;
+	    display: block;
+	    height: auto;
+	    overflow: visible;
+	    position: absolute !important;
+	    width: 100%;
+	}
+	.has-dropdown.moved > a:after {
+	    display: none;
+	}
+	.dropdown {
+	    clip: rect(1px, 1px, 1px, 1px);
+	    display: block;
+	    height: 1px;
+	    left: 100%;
+	    overflow: hidden;
+	    position: absolute !important;
+	    top: 13px;
+	    width: 1px;
+	    z-index: 99;
+	    padding-bottom: 13px;
+	    /*
+.dropdown  {
+		    top: 0px;
+	    }
+*/
+	    li {
+		    height: auto;
+		    width: 100%;
+		}
+		li a {
+		    background: #e4e2e0;
+		    color: $donker;
+		    line-height: 1;
+		    padding: 14px 19px 12px;
+		    white-space: nowrap;
+		    font: normal 18px $font_b;
+		    &:hover {
+			    color: $green;
+				background: #c7c6c4;
+		    }
+		}
+		.dropdown  li a { 
+			background: #e4e2e0;
+		}
+		li a.parent-link {
+		    font-weight: normal;
+		}
+		li.title h5 {
+		    margin-bottom: 0;
+		}
+		li.title h5 a {
+		    color: white;
+		    display: block;
+		    font: normal rem-calc(18) $font_b;
+			padding: 12px 20px;
+		    text-transform: none;
+		    width: 100%;
+		    background: #fff;
+		    color: $donker; 
+		    position: relative;
+		}
+		/*
+.dropdown li.title h5 a { 
+			background: #d7dee2;
+		}
+*/
+		li.has-form {
+		    padding: 8px 15px;
+		}
+		
+		label {
+		    color: #777777;
+		    font-size: 0.625rem;
+		    font-weight: bold;
+		    margin-bottom: 0;
+		    padding: 8px 15px 2px;
+		    text-transform: uppercase;
+		}
+	}
+	
+}
+
+.js-generated {
+    display: block;
+}
+
+@include between-breakpoints(768px, 4900px) {
+	.top-bar {
+	    overflow: visible;
+	    &:before, &:after {
+		    content: " ";
+		    display: table;
+		    
+		}
+		&:after {
+		    clear: both;
+		}
+		.toggle-topbar {
+		    display: none;
+		}
+		.title-area {
+		    float: left;
+		}
+		.name h1 a {
+		    width: auto;
+		}
+		
+		&.expanded {
+		    background: none repeat scroll 0 0 #333333;
+		}
+		.name {
+			display: none;
+		}
+	}
+	
+	.contain-to-grid .top-bar {
+	    margin: 0 auto;
+	    max-width: 75rem;
+	}
+	.top-bar-section {
+	    left: 0 !important;
+	    padding-top: 27px; 
+	    > ul {
+		    display: inline;
+		    height: auto !important;
+		    width: auto;
+		    > li {
+			    float: left;
+			    margin-left: 35px;
+			    position: relative;
+			    padding-bottom: 25px;
+			    border: none;
+			    @include breakpoint(870px) {  
+				    margin-left: 20px;
+			    }
+			    > a {
+				    font-size: rem-calc(18);
+				    color: $donker;
+				    padding: 0;
+				    &:hover {
+						color: $green;
+						
+				    }
+			    }
+			    .js-generated {
+				    display: none;
+				}
+				&.active > a {
+				    color: $green;
+				    &:hover {
+					    color: $green;
+					}
+				}
+			}
+		}
+		.has-dropdown {
+			
+			> a {
+			    padding-right: 0;
+			    &:after {
+				    content: "";
+				    display: block;
+				    height: 0;
+				    margin: 0;
+				    top: 0;
+				    width: 0;
+				    position: relative; 
+				}
+			}
+			&.moved {
+			    position: relative;
+			    > .dropdown {
+				    clip: rect(1px, 1px, 1px, 1px);
+				    display: block;
+				    height: 1px;
+				    overflow: hidden;
+				    position: absolute !important;
+				    width: 1px;
+				}
+			}
+			&.hover > .dropdown, &.not-click:hover > .dropdown {
+			    clip: auto;
+			    display: block;
+			    height: auto;
+			    overflow: visible;
+			    position: absolute !important;
+			    width: auto;
+			}
+			.dropdown li.has-dropdown > a:after {
+			    border: medium none;
+			    content: "»";
+			    line-height: 1.2;
+			    margin-top: -1px;
+			    right: 5px;
+			    top: 1rem;
+			}
+		}
+		
+		
+		
+		
+		.dropdown {
+		    background: none repeat scroll 0 0 transparent;
+		    left: 0;
+		    min-width: 100%;
+		    top: 43px;
+		   
+		    li {
+		    	&:nth-child(2) a {
+			    	@include box-shadow(inset 0px 3px 4px -3px rgba(0,0,0,0.5));
+		    	}
+			    a {
+				   font-size: 16px; 
+				   background: #f9f9f9;
+				   &:hover {
+					   background: #e4e2e0; 
+				   }
+				}
+				label {
+				    background: #f9f9f9;
+				    white-space: nowrap;
+				}
+				.dropdown {
+				    left: 100%;
+				    top: 0;
+				}
+		    }
+		}
+		> ul > .divider, > ul > [role="separator"] {
+		    border-bottom: medium none;
+		    border-right: 1px solid #4e4e4e;
+		    border-top: medium none;
+		    clear: none;
+		    height: 45px;
+		    width: 0;
+		}
+		 
+		.right li .dropdown { 
+		    left: -20px;
+		}
+		.right li .dropdown li .dropdown {
+		    left: 100%;
+		}
+		.left li .dropdown {
+		    left: 0;
+		    right: auto;
+		}
+		.left li .dropdown li .dropdown {
+		    left: 100%;
+		}
+	}
+	
+	
+	.no-js .top-bar-section ul li:hover > a {
+	    background: none repeat scroll 0 0 #272727;
+	    color: white;
+	}
+	.no-js .top-bar-section ul li:active > a {
+	    background: none repeat scroll 0 0 #008cba;
+	    color: white;
+	}
+	.no-js .top-bar-section .has-dropdown:hover > .dropdown {
+	    clip: auto;
+	    display: block;
+	    height: auto;
+	    overflow: visible;
+	    position: absolute !important;
+	    width: auto;
+	}
+}
+
+
+//Breadcrumb
+.breadcrumbs {
+    display: block;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 0 10px 15px;
+    @include breakpoint(450px) {  
+		display: none;
+	}
+    label {
+	    color: $pink;
+	    @include breakpoint(450px) {  
+			display: none;
+		}
+    }
+    > * {
+	    color: #9d9685;
+	    float: left;
+	    font-size: rem-calc(12);
+	    margin: 0;
+	    font-family: $font_a; 
+	}
+	> *:hover a, > *:focus a {
+	    text-decoration: underline;
+	}
+	> a {
+	    color: #9d9685;
+	    
+	    span {
+		   text-decoration: underline; 
+	    }
+	    &:hover {
+		    span {
+		    	text-decoration: none;
+		    }
+	    }
+	}
+	> .current {
+	    /* color: $purple; */
+	    cursor: default;
+	    span {
+		   text-decoration: none; 
+	    }
+	}
+	> .current a {
+	    /* color: $purple; */
+	    cursor: default;
+	    
+	}
+	> .current:hover {
+		span {
+	    	text-decoration: none;
+	    }
+	}
+	> .unavailable {
+	    color: #999;
+	}
+	> .unavailable a {
+	    color: #999;
+	}
+	> .unavailable:hover, > .unavailable:hover a, > .unavailable:focus, > .unavailable a:focus {
+	    color: #999;
+	    cursor: default;
+	    text-decoration: none;
+	}
+	> *:before {
+	    color: #9d9685;
+	    content: "»";
+	    margin: 0 10px;
+	    position: relative;
+	    top: 0px;
+	    text-decoration: none !important;
+	}
+	> *:first-child:before {
+	    content: " ";
+	    margin: 0;
+	}
+	> a.home:before {
+		content: "";
+		margin: 0 0 0 10px;
+	}
+	
+}
+
+
+//paging
+ul.pagination {
+    display: block;
+    padding-top: 40px;
+    margin-left: -0.3125rem;
+    li {
+	    color: #222;
+	    font-size: 18px;
+	    
+	    margin-left: 5px;
+	    display: block;
+	    float: left;
+	    a { 
+		    color: $donker;
+		    display: block;
+		    padding: 7px 16px;
+		    background: #e4e2e0;
+		}
+		&:hover a, a:focus {
+		     background: $donker;
+		    color: #fff;
+		}
+		&.unavailable a { 
+		    cursor: default;
+		    opacity: .6;
+		}
+		&.unavailable:hover a, &.unavailable a:focus { 
+		}
+		&.current a {
+		    background: $green;
+		    color: #fff;
+		    cursor: default;
+		    font-weight: bold;
+		}
+		&.current a:hover, &.current a:focus {
+		    background: $green;
+		}
+		&.arrow a {
+			background: $donker;
+			color: #fff;
+			&:hover {
+				/* color: $donker; */
+			}
+		}
+	}
+	
+	 
+}
+
+.pagination-centered {
+    text-align: center;
+    ul.pagination li {
+	    display: inline-block;
+	    float: none;
+	}
+}
+
+
+/*Top bar child*/
+.top-bar-child {
+	background: $donker;
+	margin-bottom: 30px;
+	overflow: hidden;
+	ul {
+		width: 105%;
+		list-style: none;
+		li {
+			float: left;
+			a {
+				display: block;
+				color: #fff;
+				height: 60px;
+				font: normal 18px/60px $font_b;
+				padding: 0 42px 0 43px;
+				@include breakpoint(1200px) { 
+					padding: 0 40px;
+				}
+				@include breakpoint(1140px) { 
+					padding: 0 35px;
+				}
+				@include breakpoint(1074px) { 
+					padding: 0 30px; 
+				}
+				@include breakpoint(1000px) { 
+					padding: 0 25px; 
+				}
+				@include breakpoint(925px) { 
+					padding: 0 20px; 
+				}
+				@include breakpoint(850px) { 
+					padding: 0 15px; 
+				}
+				&:hover {
+					background: #444;
+				}
+			}
+			&.active a {
+				background: #444;
+			}
+		}
+	}
+}

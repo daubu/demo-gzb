@@ -1,0 +1,731 @@
+/*Home page*/
+
+#homepage {
+	#middle {
+		padding-top: 60px;
+		top: 540px;
+		margin-bottom: 540px;
+		background: url(../images/paper-tease.jpg) center 300px repeat-x;
+		@include breakpoint(1024px) {  
+			top: 500px;
+			margin-bottom: 500px;
+		}
+		@include breakpoint(767px) {  
+			margin-bottom: 315px;
+			top: 315px;
+		}
+	}
+	.btn-top {
+		min-height: 570px; 
+		padding-top: 454px;
+	}
+	.campagne {
+		display: block;
+	}
+	.text-banner {
+		color: #fff;
+		text-align: center;
+	}
+	.text-welcome {
+		margin-bottom: 50px;
+		text-align: center;
+		color: $donker;
+		font-size: 30px;
+		line-height: 40px;
+		font-weight: bold; 
+		@include breakpoint(1024px) {  
+			font-size: 25px;
+			line-height: 32px;
+		}
+		@include breakpoint(767px) {  
+			font-size: 22px;
+			line-height: 29px;
+			margin-bottom: 30px;
+		}
+		a {
+			color: $pink;
+		}
+	}
+	.feature-block {
+		margin-bottom: 75px;
+		@include breakpoint(767px) { 
+			margin-bottom: 30px;
+		}
+		.item {
+			margin: 0 10px;
+			@include breakpoint(767px) { 
+				margin-bottom: 30px;
+			}
+			.text {
+				line-height: 18px;
+				color: #ababab;
+				background: #fff;
+				@include border-radius(0 0 5px 5px);
+				padding: 20px 10px;
+				text-align: center;
+				color: $green;
+				font: normal 20px/25px $font_b;
+				@include box-shadow(0 0 4px 0 rgba(0,0,0, 0.1));
+				margin-bottom: 20px;
+				@include breakpoint(1024px) {   
+					font-size: 17px;
+					line-height: 22px;
+				}
+			}
+			h3 {
+				font: normal 32px/60px $font_b;
+				text-align: center;
+				height: 60px;
+				background: #bcbab5;
+				color: $donker;
+				@include breakpoint(1024px) { 
+					font-size: 23px;
+					height: 50px;
+					line-height: 50px;
+				}
+				@include border-radius(5px 5px 0 0);
+				a {
+					color: $donker;
+					display: inline-block; 
+					vertical-align: middle;
+				}
+				 
+			}
+			.button i {
+				margin-left: 15px;
+			}
+		}
+		.button-wrap {
+			text-align: center;
+		}
+	}
+	
+	.call-action {
+		text-align: center;
+	}
+	.block-block {
+		padding-top: 30px;
+		margin-bottom: 30px;
+		h3.title {
+			font-size: 30px;
+			line-height: 40px;
+			@include breakpoint(767px) {    
+				font-size: 22px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+#infographic-page {
+	#middle {
+		padding-top: 60px;
+		top: 540px;
+		margin-bottom: 540px;
+		@include breakpoint(767px) {  
+			margin-bottom: 315px;
+			top: 315px;
+		}
+	}
+	.text-welcome {
+		font: normal 38px/46px $font_b;
+		margin-bottom: 60px;
+		padding-top: 10px; 
+		text-align: center;
+	}
+	.body-infographic {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+#template-page {
+	#middle {
+		padding-top: 60px;
+		top: 540px;
+		margin-bottom: 540px;
+		@include breakpoint(767px) {  
+			margin-bottom: 315px;
+			top: 315px;
+		}
+	}
+	
+	.text-welcome {
+		font: normal 24px/34px $font_b;
+		margin-bottom: 60px;
+		padding-top: 10px;
+		color: #9E9988;
+		@include breakpoint(767px) {  
+			font-size: 20px;
+			line-height: 26px;
+		}
+		.button-wrap {
+			padding-top: 45px;
+		}
+		.text {
+			text-align: center;
+			 
+		}
+	}
+	.block-6-footer {
+	 	padding-top: 40px;
+		 h3.title {
+			 font-size: 40px;
+		 }
+	 }
+}
+
+#themeview-page {
+	.text-welcome {
+		font: normal 24px/30px $font_b;
+		margin-bottom: 50px;
+		padding-top: 10px;
+		.button-wrap {
+			padding-top: 45px;
+		}
+		.text {
+			 
+			text-align: center;
+			
+		}
+		@include breakpoint(1024px) {  
+			font-size: 22px;
+			line-height: 30px;
+		}
+		@include breakpoint(767px) {  
+			font-size: 20px;
+			line-height: 25px;
+			margin-bottom: 30px;
+		}
+	}
+	.text-full {
+		.detail-content {
+			padding-bottom: 20px;
+			h3 {
+				font-size: 20px;
+				color: #b1c31d;
+			}
+		}
+	}
+	.gray-list {
+		margin-bottom: 40px;
+	}
+	.active-block .box {
+		margin-bottom: 20px;
+	}
+	.member-box {
+		.grid-view .meta h3.title a {
+			font-size: 18px;
+		}
+	}
+}
+
+
+#donate-page {
+	#middle {
+		top: 220px;
+	}
+	.call-action {
+		margin-bottom: 50px;
+	}
+	.call-action.center a {
+	    margin: 0 3px 10px;
+	}
+	.progress-bar {
+		margin-bottom: 95px;
+	}
+	.input-currency {
+		text-align: center;
+		margin-bottom: 55px;
+		label {
+			font: normal 24px $font_b;
+			display: inline-block;
+			margin-right: 5px;
+		}
+		input {
+			width: 80px;
+		}
+	}
+	.text-intro {
+		text-align: center;
+		font: bold 15px/20px $font_a;
+		max-width: 400px;
+		margin: 0 auto 40px;
+	}
+	.form-email {
+		text-align: center;
+		margin-bottom: 25px;
+		label {
+			font: normal 24px $font_b;
+			display: block;
+			text-align: center;
+			margin-bottom: 17px;
+		}
+		input {
+			width: 70%;
+		}
+	}
+}
+
+
+#project-page {
+	.widget-progress {
+		background: #fff;
+		padding: 25px 30px 30px;
+		h3 {
+			font: normal 24px $font_b;
+			margin-bottom: 15px;
+			@include breakpoint(1024px) {  
+				font-size: 20px;
+			}
+		}
+		.progress-bar {
+			margin-bottom: 15px;
+		}
+		.call-action {
+			text-align: center;
+		}
+	}
+	.map-box {
+		margin-bottom: 50px;
+	}
+	.filter {
+		.wrap-filter {
+			margin-bottom: 10px;
+		}
+		h3 {
+			font: normal 21px $font_b;
+			margin-right: 20px;
+			margin-bottom: 17px;
+			float: left;
+			padding-left: 30px;
+			padding-top: 5px;
+			@include breakpoint(640px) { 
+				float: none;
+				margin-bottom: 10px;
+				padding-left: 0;
+			}
+		}
+		.wrap-select {
+			float: left;
+			width: 20%; 
+			margin-right: 20px;
+			@include breakpoint(640px) {  
+				float: none;
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	#map {
+		.wrap-filter {
+			padding-top: 10px;
+			h3 {
+				padding: 6px 10px 0;
+				font-size: 21px;
+			}
+			h3, .wrap-select {
+				float: left;
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+			.wrap-select {
+				width: 20%;
+				@include breakpoint(780px) { 
+					width: 100%;
+				}
+			}
+		}
+	}
+	.list-view .meta .text {
+		max-height: 80px;
+	}
+}
+
+
+#campagn-page {
+	.video-box {
+		margin-bottom: 70px;
+		.title-video {
+			text-align: center;
+			color: #fff;
+			font: bold 50px $font_b;
+			text-transform: uppercase;
+			margin-top: -60px;
+			position: relative;
+			top: -100px;
+		}
+	}
+	.desc-text {
+		margin-bottom: 55px;
+		.text {
+			font: normal 24px/30px $font_b;
+			margin-bottom: 45px;
+			text-align: center;
+			@include breakpoint(767px) { 
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+		.call-action {
+			text-align: center;
+			a {
+				margin: 0 10px;
+				@include breakpoint(480px) {  
+					margin-bottom: 15px;
+				}
+			}		
+		}
+	}
+	.gray-list {
+		margin-bottom: 30px;
+	}
+	.ab-progress .grid-view {
+		margin-bottom: 30px;
+	}
+	.call-action-big {
+		text-align: center;
+		a {
+			padding: 20px 30px;
+		}
+		span {
+			margin: 0 25px;
+			font-size: 23px;
+			font-style: italic;
+			@include breakpoint(580px) {  
+				display: block;
+				padding: 15px 0;
+			}
+		}
+	}
+}
+ 
+#storyview-page{
+	position: relative;
+	.call-action {
+		text-align: center;
+		margin-bottom: 55px;
+		a {
+			margin: 0 10px;
+		}		
+	}	
+	#content {
+		overflow: hidden;
+	}
+	.fade-div {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: rgba(255,255,255,0.6);
+		left: 0;
+		top: 0;
+		z-index: 999;
+		&.fade-top {
+			height: 371px;
+			z-index: 9;
+		}
+	}
+	.row.slide-section, .row.desc-text {
+		z-index: 99999;
+		position: relative;
+	}
+}
+#error-page {
+	.box-page .box-body {
+		padding: 20px;
+	}
+	.content-editor {
+		margin-bottom: 70px;
+	}
+	.content-editor h3 {
+		color: $donker;
+		margin-bottom: 20px;
+		font-size: 23px;
+	}
+	.block-block h3.title {
+		font-size: 30px;
+		color: $donker;
+	}
+}
+
+#search-page {
+	h1.title-box {
+		span {
+			color: $green;
+		}
+	}
+	h2.title-block {
+		font-size: 32px;
+	}
+	#middle > .row > .large-8 {
+		margin-bottom: 30px;
+	}
+	.list-search {
+		font: normal 15px/20px $font_a;
+		margin-bottom: 40px;
+		li {
+			list-style: none;
+			margin-top: 20px;
+			.link {
+				margin-bottom: 5px;
+				color: $green;
+				a {
+					color: $green;
+					font-size: 15px;
+					text-decoration: underline;
+				}
+				
+			}
+			h3 a {
+				color: #24305a;
+				font: normal 20px $font_b;
+				display: block;
+				margin-bottom: 5px;
+			}
+			.text a {
+				color: $green;
+			}
+		}
+	}
+}
+
+ #normal-page {
+	 .detail-content {
+		 padding: 10px;
+	 }
+	 .thumb-big {
+		 margin-bottom: 55px;
+	 }
+	 .content-editor {
+		 padding: 0 90px 20px 90px;
+		 @include breakpoint(1024px) {  
+			 padding-left: 10px;
+			 padding-right: 10px;
+		 }
+		 blockquote {
+			 margin-left: -100px;
+			 padding-left: 95px;
+			 max-width: inherit;
+			 @include breakpoint(1024px) {   
+				 margin-left: -20px;
+				 padding-left: 25px;
+			 }
+		 }
+	 }
+ }
+ 
+ #action-page {
+	 h2.title-block {
+		 margin-bottom: 20px;
+		 margin-top: 40px;
+	 }
+	 .desc-text {
+		.text {
+			font: normal 24px/30px $font_b;
+			margin-bottom: 45px;
+			text-align: center;
+		}
+		.call-action {
+			text-align: center;
+			a {
+				margin: 0 10px;
+			}		
+		}
+	}
+	.ab-progress {
+		.grid-view {
+			margin-bottom: 40px;
+		}
+	}
+	.title-image {
+		text-align: center; 
+		img {
+			margin-top: -300px;
+			@include breakpoint(767px) { 
+				width: 30%;
+				margin-top: -200px;
+			}
+		}
+	}
+	.feature-post {
+		.detail-content {
+			padding: 0;
+			overflow: hidden;
+			@include breakpoint(767px) {  
+				padding: 20px 0 0 20px;
+			}
+		}
+		.thumb {
+			float: left;
+			margin-right: 38px;
+			width: 46.5%;
+		}
+		.meta {
+			padding: 35px 20px 20px 0;
+			.text {
+				font-size: 24px;
+				line-height: 30px;
+				@include breakpoint(1200px) { 
+					font-size: 20px;
+					line-height: 24px;
+				}
+				@include breakpoint(1070px) { 
+					font-size: 17px;
+					line-height: 22px;
+				}
+				a {
+					color: $green;
+				}
+				p {
+					margin-bottom: 20px;
+					@include breakpoint(1070px) { 
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	
+	.callshare-block {
+		margin-bottom: 40px;
+		h2 {
+			text-align: center;
+			font: normal 48px $font_b;
+			margin-bottom: 30px;
+			@include breakpoint(480px) {  
+				font-size: 36px; 
+			}
+		}
+		.call-action {
+			span {
+				font-size: 36px;
+				font-style: italic;
+				margin: 0 30px 0 50px;
+				vertical-align: top;
+				line-height: 65px;
+				@include breakpoint(1024px) {  
+					font-size: 27px;
+					line-height: 48px;
+				}
+				@include breakpoint(810px) { 
+					display: block;
+					line-height: 60px;
+				}
+				@include breakpoint(480px) {  
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.call-action {
+		margin-bottom: 60px;
+	}
+}
+ 
+ #werkveld-page {
+	 .big-title {
+		 text-align: center;
+		 font: normal 45px/45px $font_b;
+		 margin-bottom: 70px;
+		 @include breakpoint(767px) {  
+			 font-size: 35px;
+			 line-height: 40px;
+			 margin-bottom: 50px;
+		 }
+	 }
+	 .grid-06-block {
+		 margin-bottom: 40px;
+	 }
+ }
+
+#zendingswerker-page {
+	#top {
+		background: #fff;
+	}
+	#logo {
+		left: auto;
+		right: -20px;
+	}
+	.box {
+		margin-bottom: 30px;
+	}
+	.show-small {
+		display: none;
+	}
+	@include breakpoint(767px) {
+		.hide-small {
+			display: none;
+			
+		}
+		.show-small {
+			display: block;
+			#logo {
+				left: 0;
+				right: auto;
+			}
+		}
+	}
+	.sitename { 
+		margin-left: 0 !important;
+	    padding-top: 24px;
+	    width: 75% !important;
+		h2 {
+			font: normal 37px $font_b;
+			color: #24305a;
+		}
+		h3 {
+			font-size: 27px;
+			color: $donker;
+			font-weight: normal;
+		}
+	}
+	.detail-content {
+		padding-right: 40px;
+		padding-bottom: 10px;
+		h1.title {
+			margin-top: 0;
+			color: #24305a;
+			font-size: 33px;
+		}
+	}
+	.thumb-box {
+		.box-body {
+			background: #fff;
+			padding: 20px 20px 0;
+			@include box-shadow(0 0 4px 0 rgba(0,0,0, 0.1));
+		}
+		ul li {
+			img {
+				display: block;
+				width: 100%;
+			}
+			h3 {
+				a {
+					display: block;
+					background: $donker;
+					color: #fff;
+					font: normal 15px $font_a;
+					padding:  7px 10px;
+				}
+			}
+		}
+	}
+	.widget-nieuwsbrief {
+		padding-bottom: 5px;
+		h3 {
+			font-size: 27px;
+			color: $green;
+		}
+		.row-form {
+			margin-bottom: 15px;
+			label {
+				font-weight: bold;
+				font-size: 18px;
+			}
+		}
+		.button {
+			padding-top: 13px;
+			padding-bottom: 13px;
+		}
+	}
+}
